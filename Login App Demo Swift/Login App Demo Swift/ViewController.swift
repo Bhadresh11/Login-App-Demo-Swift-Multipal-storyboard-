@@ -19,7 +19,34 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    @IBOutlet var txtUserName: UITextField!
+    @IBOutlet var txtUserPassword: UITextField!
 
-
+    @IBAction func btnLogin(_ sender: Any) {
+        if (txtUserName.text?.characters.count)! > 2 && (txtUserPassword.text?.characters.count)! > 2
+        {
+            let storyboard = UIStoryboard(name: "DashBoard", bundle: nil)
+            let vc = storyboard.instantiateInitialViewController()
+            present(vc!, animated: true, completion: nil)
+            
+            
+            
+            let defaults = UserDefaults.standard
+            defaults.set(txtUserName.text, forKey: "txtUserName")
+            defaults.set(txtUserPassword.text, forKey: "txtUserPassword")
+            defaults.synchronize();
+        }
+        else{
+            
+            
+            let alert = UIAlertController(title: "Alert", message: "User Name & Password > 2 character", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+    }
+    
 }
 

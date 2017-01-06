@@ -20,16 +20,17 @@ class HomeVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    @IBAction func btnLogOut(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        defaults.set(nil, forKey: "txtUserName")
+        defaults.set(nil, forKey: "txtUserPassword")
+        defaults.synchronize();
+        
+//        dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: {});
 
-    /*
-    // MARK: - Navigation
+        
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
 
 }

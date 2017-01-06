@@ -12,6 +12,10 @@
 		04D44B231E1F99D600F7CC49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D44B211E1F99D600F7CC49 /* Main.storyboard */; };
 		04D44B251E1F99D600F7CC49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D44B241E1F99D600F7CC49 /* Assets.xcassets */; };
 		04D44B281E1F99D600F7CC49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D44B261E1F99D600F7CC49 /* LaunchScreen.storyboard */; };
+		04D44B301E1F9B3200F7CC49 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D44B2F1E1F9B3200F7CC49 /* HomeVC.swift */; };
+		04D44B331E1F9B6600F7CC49 /* DashBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D44B311E1F9B6600F7CC49 /* DashBoard.storyboard */; };
+		04D44B411E1FA46700F7CC49 /* ENSideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D44B3F1E1FA46700F7CC49 /* ENSideMenu.swift */; };
+		04D44B421E1FA46700F7CC49 /* ENSideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D44B401E1FA46700F7CC49 /* ENSideMenuNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		04D44B241E1F99D600F7CC49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04D44B271E1F99D600F7CC49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04D44B291E1F99D600F7CC49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D44B2F1E1F9B3200F7CC49 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		04D44B321E1F9B6600F7CC49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DashBoard.storyboard; sourceTree = "<group>"; };
+		04D44B3F1E1FA46700F7CC49 /* ENSideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenu.swift; sourceTree = "<group>"; };
+		04D44B401E1FA46700F7CC49 /* ENSideMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENSideMenuNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		04D44B1C1E1F99D600F7CC49 /* Login App Demo Swift */ = {
 			isa = PBXGroup;
 			children = (
+				04D44B3E1E1FA46700F7CC49 /* Library */,
 				04D44B1D1E1F99D600F7CC49 /* AppDelegate.swift */,
 				04D44B1F1E1F99D600F7CC49 /* ViewController.swift */,
+				04D44B2F1E1F9B3200F7CC49 /* HomeVC.swift */,
 				04D44B211E1F99D600F7CC49 /* Main.storyboard */,
+				04D44B311E1F9B6600F7CC49 /* DashBoard.storyboard */,
 				04D44B241E1F99D600F7CC49 /* Assets.xcassets */,
 				04D44B261E1F99D600F7CC49 /* LaunchScreen.storyboard */,
 				04D44B291E1F99D600F7CC49 /* Info.plist */,
 			);
 			path = "Login App Demo Swift";
+			sourceTree = "<group>";
+		};
+		04D44B3E1E1FA46700F7CC49 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				04D44B3F1E1FA46700F7CC49 /* ENSideMenu.swift */,
+				04D44B401E1FA46700F7CC49 /* ENSideMenuNavigationController.swift */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +116,7 @@
 				TargetAttributes = {
 					04D44B191E1F99D600F7CC49 = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -126,6 +146,7 @@
 				04D44B281E1F99D600F7CC49 /* LaunchScreen.storyboard in Resources */,
 				04D44B251E1F99D600F7CC49 /* Assets.xcassets in Resources */,
 				04D44B231E1F99D600F7CC49 /* Main.storyboard in Resources */,
+				04D44B331E1F9B6600F7CC49 /* DashBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D44B421E1FA46700F7CC49 /* ENSideMenuNavigationController.swift in Sources */,
+				04D44B301E1F9B3200F7CC49 /* HomeVC.swift in Sources */,
+				04D44B411E1FA46700F7CC49 /* ENSideMenu.swift in Sources */,
 				04D44B201E1F99D600F7CC49 /* ViewController.swift in Sources */,
 				04D44B1E1E1F99D600F7CC49 /* AppDelegate.swift in Sources */,
 			);
@@ -158,6 +182,14 @@
 				04D44B271E1F99D600F7CC49 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		04D44B311E1F9B6600F7CC49 /* DashBoard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04D44B321E1F9B6600F7CC49 /* Base */,
+			);
+			name = DashBoard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -184,7 +216,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -234,7 +266,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -260,6 +292,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Login App Demo Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Login-App-Demo-Swift";
@@ -272,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Login App Demo Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Login-App-Demo-Swift";
